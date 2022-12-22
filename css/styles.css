@@ -1,3 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  display: grid;
+  background-color: var(--Light_Grayish_Blue);
+}
+
+.main {
+  margin: 4.5rem 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.comment {
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+
+.main article:nth-child(1) {
+  background-color: var(--Moderate_Violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 12rem;
+}
+
+.main article:nth-child(2) {
+  background-color: var(--Very_Dark_Grayish);
+}
+
+.main article:nth-child(3) {
+  background-color: var(--White);
+}
+
+.main article:nth-child(4) {
+  background-color: var(--Very_Dark_Blackish);
+}
+
+.main article:nth-child(5) {
+  background-color: var(--White);
+}
+
+.user {
+  display: flex;
+}
+
+.user img {
+  width: 2rem;
+  border-radius: 5rem;
+}
+
+.border {
+  border: solid 2.5px hsl(263, 30%, 52%);
+}
+
+.user__info {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__info p {
+  margin: 0;
+  color: var(--White);
+  letter-spacing: 0.8px;
+}
+
+.user__info p:last-child {
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+  opacity: 50%;
+}
+
+.comment__title {
+  font-size: 18.9px;
+  color: var(--White);
+}
+
+.comment__info {
+  line-height: 1.2rem;
+  font-weight: normal;
+  color: var(--White);
+  opacity: 70%;
+}
+
+.dark,
+.dark p {
+  color: var(--Very_Dark_Grayish);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
